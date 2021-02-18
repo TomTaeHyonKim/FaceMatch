@@ -109,11 +109,17 @@ class MainWindow(Gtk.Window):
 
 	def __init__(self):
 		Gtk.Window.__init__(self, title = "Face Match")
-		self.set_border_width(40)
+		self.set_default_size(400, 500)
+
+		# Scrolled window
+		self.scroll = Gtk.ScrolledWindow()
+		self.scroll.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+		self.add(self.scroll)
 
 		# Box
 		self.vbox1 = Gtk.Box(orientation = Gtk.Orientation.VERTICAL, spacing = 40)
-		self.add(self.vbox1)
+		self.vbox1.set_border_width(40)
+		self.scroll.add(self.vbox1)
 
 		# Sections
 		self.section1 = Gtk.Box(orientation = Gtk.Orientation.VERTICAL, spacing = 20)
