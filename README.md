@@ -35,7 +35,6 @@ After the program runs, there will be a new folder on your Desktop containing on
 
 ## Running the application
 
-Currently the application only parses folders containing only image files. With this limitation in mind, feel free to sort through your own photographs and try searching for yourself by taking a picture with the webcam.
-
+The application now parses through any directory. Non-image files are passed over and directories located within the chosen search directory are parsed recursively. The text for the "Help" dialog will be added in the coming days. Any changes to the search settings will not be saved once the program terminates.
 
 
