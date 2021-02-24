@@ -251,7 +251,20 @@ class MainWindow(Gtk.Window):
 
 	def on_help_button_clicked(self, widget):
 		"""Open help dialog"""
-		help_text = "help text"
+		help_text = """I hope you have been enjoying using FaceMatch. If you wish to alter the parameters of the search, then open the settings menu from the top right of the main window. The various options are outlined below:
+
+
+		Tolerance
+
+Dictates how strict a comparison is made between two faces. A lower value makes face comparisons more strict
+
+		Include unknown faces
+
+When on, results will contain images that include unknown faces. When off, results will contain images that feature only known faces.
+
+		Strict search
+
+When on, results will contain only images that feature all the known faces. When off, results will contain images that feature at least one of the known faces."""
 		dialog = Gtk.MessageDialog(
 			self,
 			0,
